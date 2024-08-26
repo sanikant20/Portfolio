@@ -1,0 +1,199 @@
+.App {
+  text-align: center;
+}
+
+/* Home page background */
+.header-bg {
+  background: url('https://media.istockphoto.com/id/1352603244/photo/shot-of-an-unrecognizable-businessman-working-on-his-laptop-in-the-office.jpg?s=612x612&w=0&k=20&c=upiDYeAZEsxbUBdhX35MXm79drIXA-5Q-FcfmZk71lM=') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.header-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.header-bg .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Project page background */
+.projects-bg {
+  background: url('https://st5.depositphotos.com/35914836/63547/i/450/depositphotos_635479512-stock-photo-brown-wooden-wall-texture-background.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.projects-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.projects-bg .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* About page background */
+.about-bg {
+  background: url('https://t3.ftcdn.net/jpg/01/91/78/32/360_F_191783282_0TVrx5VrvrkpDHSKdjjI87HkbXJy5TMw.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+.about-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.about-bg .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-image {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+/* Contact page background image */
+.contact-bg {
+  background: url('https://img.freepik.com/premium-photo/wooden-block-with-symbol-telephone-email-address-website-page-contact-us-e-mail-marketing-concept-3d-rendering_20693-752.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  padding: 5rem 0;
+}
+
+.contact-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.contact-bg .container {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-bg .form-control,
+.contact-bg .btn {
+  border-radius: 0.25rem;
+}
+
+.contact-bg .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.contact-bg .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Card Styling == For Project Section*/
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text-wrapper {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0;
+}
+
+.mt-auto {
+  margin-top: 5px;
+}
+
+/* Styling for the button of project details page */
+.button-group .btn {
+  margin-right: 15px;
+  padding: 10px 20px;
+}
+
+.button-group .btn:last-child {
+  margin-right: 0;
+}
+
+/* Styling for the About Section */
+
+#about {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.about-text {
+  padding: 20px;
+}
+
+.about-text h3 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.about-image {
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+  height: 100%;
+}
+
+.about-image img {
+  max-width: 100%;
+  border: 5px solid #dee2e6;
+  height: 500px;
+}
