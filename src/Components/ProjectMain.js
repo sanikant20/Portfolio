@@ -28,7 +28,6 @@ const ProjectMain = () => {
                                 <div className="mt-auto d-flex justify-content-between">
                                     <Link to="/profile-management-project-details" className="btn btn-primary mt-3">View Details</Link>
                                     <Link to="https://crud-profile-manager.netlify.app/" className="btn btn-secondary mt-3">Live Demo</Link>
-                                    
                                 </div>
                             </div>
                         </div>

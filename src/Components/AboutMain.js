@@ -22,16 +22,15 @@ const AboutMain = () => {
                         </div>
                     </div>
 
-                    <div className="col-md-6">
+                    <div className="col-md-6 text-center">
                         <div className="about-image">
                             <img
                                 src="sani.jpg"
                                 alt="Sanikant"
-                                className="img-fluid rounded-circle align-end"
+                                className="img-fluid rounded-circle mx-auto d-block"
                             />
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </section>
