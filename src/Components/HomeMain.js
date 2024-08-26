@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Homemain = () => {
     return (
@@ -9,7 +10,7 @@ const Homemain = () => {
                     <h1>Welcome to My Portfolio</h1>
                     <h3>It's me Sanikant Kushwaha</h3>
                     <p className="lead">I'm a passionate developer with skills in React, Node, and more!</p>
-                    <a href="/projects" className="btn btn-primary mt-3">View My Work</a>
+                    <Link to="/projects" className="btn btn-primary mt-3">View My Work</Link>
                 </div>
             </header>
 
@@ -41,8 +42,6 @@ const Homemain = () => {
                     </div>
                 </div>
             </section>
-
-
         </div>
     );
 }

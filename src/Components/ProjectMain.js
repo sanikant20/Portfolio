@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProjectMain = () => {
     return (
@@ -25,12 +26,7 @@ const ProjectMain = () => {
                                     </p>
                                 </div>
                                 <div className="mt-auto d-flex justify-content-between">
-                                    <a
-                                        href="profile-management-project-details"
-                                        className="btn btn-primary"
-                                    >
-                                        View Details
-                                    </a>
+                                    <Link to="/profile-management-project-details" className="btn btn-primary mt-3">View Details</Link>
                                     <a
                                         href="https://crud-profile-manager.netlify.app/"
                                         className="btn btn-success"
@@ -39,14 +35,6 @@ const ProjectMain = () => {
                                     >
                                         Live Demo
                                     </a>
-                                    {/* <a
-                                        href="https://github.com/sanikant20/crudprofilemanager"
-                                        className="btn btn-primary"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        View GitHub Code
-                                    </a> */}
                                 </div>
                             </div>
                         </div>
@@ -70,20 +58,7 @@ const ProjectMain = () => {
                                     </p>
                                 </div>
                                 <div className="mt-auto d-flex justify-content-between">
-                                    <a
-                                        href="/agromart-project-details"
-                                        className="btn btn-primary"
-                                    >
-                                        View Details
-                                    </a>
-                                    {/* <a
-                                        href="https://github.com/sanikant20/Agromart/tree/main/Development"
-                                        className="btn btn-primary"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        View GitHub Code
-                                    </a> */}
+                                    <Link to="/agromart-project-details" className="btn btn-primary mt-3">View Details</Link>
                                 </div>
                             </div>
                         </div>
@@ -106,20 +81,7 @@ const ProjectMain = () => {
                                     </p>
                                 </div>
                                 <div className="mt-auto d-flex justify-content-between">
-                                    <a
-                                        href="food-ordering-project-details"
-                                        className="btn btn-primary"
-                                    >
-                                        View Details
-                                    </a>
-                                    {/* <a
-                                        href="https://github.com/sanikant20/FoodDeliveryApp"
-                                        className="btn btn-primary"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        View GitHub Code
-                                    </a> */}
+                                    <Link to="/food-ordering-project-details" className="btn btn-primary mt-3">View Details</Link>
                                 </div>
                             </div>
                         </div>
