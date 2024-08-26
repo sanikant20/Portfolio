@@ -27,7 +27,6 @@ const FoodOrderingSystem = () => {
                             <h4>Key Features:</h4>
                             <i><b>Full Stack Web Application (MERN Stack)</b></i>
                             <ul>
-                                <li><b></b></li>
                                 <li><b>Category-Based Listing:</b> The application displays food items organized into categories, making it easy for users to find specific types of cuisine or dishes. </li>
                                 <li><b>Dynamic Food Selection:</b> Each food item is listed with options to choose between a half plate or a full plate, with prices that automatically adjust based on the selection.</li>
                                 <li><b>Add to Cart:</b> Users can add their selected food items to the shopping cart, with the option to choose the portion size (half plate or full plate), which influences the total price.</li>
