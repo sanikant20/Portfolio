@@ -9,7 +9,7 @@ const Homemain = () => {
                     <h1>Welcome to My Portfolio</h1>
                     <h3>It's me Sanikant Kushwaha</h3>
                     <p className="lead">I'm a passionate developer with skills in React, Node, and more!</p>
-                    <a href="/project" className="btn btn-primary mt-3">View My Work</a>
+                    <a href="/projects" className="btn btn-primary mt-3">View My Work</a>
                 </div>
             </header>
 

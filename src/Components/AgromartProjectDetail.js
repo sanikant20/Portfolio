@@ -69,7 +69,7 @@ const AgromartProjectDetail = () => {
                     </div>
                 </div>
                 <div className="mt-4 text-center">
-                    <Link to="/project" className="btn btn-info">
+                    <Link to="/projects" className="btn btn-info">
                         Back to Projects
                     </Link>
                 </div>

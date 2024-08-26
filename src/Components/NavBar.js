@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
@@ -16,7 +15,7 @@ function NavBar() {
           {/* Navigation buttons aligned to the right */}
           <Nav className="ms-auto">
             <NavLink className="nav-link" to="/">Home</NavLink>
-            <NavLink className="nav-link" to="/project">Project</NavLink>
+            <NavLink className="nav-link" to="/projects">Project</NavLink>
             <NavLink className="nav-link" to="/about">About</NavLink>
             <NavLink className="nav-link" to="/contact">Contact</NavLink>
             

@@ -1,7 +1,7 @@
 import React from 'react'
-import NavBar from '../../Components/NavBar'
-import AgromartProjectDetail from '../../Components/Projects/AgromartProjectDetail'
-import Footer from '../../Components/Footer'
+import NavBar from '../Components/NavBar'
+import AgromartProjectDetail from '../Components/AgromartProjectDetail'
+import Footer from '../Components/Footer'
 
 const ProjectScreen = () => {
   return (

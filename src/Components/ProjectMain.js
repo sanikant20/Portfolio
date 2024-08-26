@@ -58,7 +58,7 @@ const ProjectMain = () => {
                                 src="agromart.png"
                                 className="card-img-top"
                                 alt="AgroMart App"
-                                style={{ height: '200px', objectFit: 'cover' }}
+                                style={{ height: '200px', objectFit: 'contain' }}
                             />
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title">AgroMart App</h5>
@@ -92,7 +92,7 @@ const ProjectMain = () => {
                     <div className="col-md-4 col-sm-6 col-12" style={{ marginTop: "10px" }}>
                         <div className="card shadow-lg mb-4 h-100">
                             <img
-                                src="PageNotFound.jpg"
+                                src="foodorderingsystem.png"
                                 className="card-img-top"
                                 alt="Food Ordering System"
                                 style={{ height: '200px', objectFit: 'cover' }}
