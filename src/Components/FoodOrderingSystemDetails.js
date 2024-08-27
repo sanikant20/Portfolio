@@ -45,14 +45,6 @@ const FoodOrderingSystem = () => {
                             >
                                 View Code
                             </a>
-                            {/* <a
-                                href="https://live-demo-link.com"
-                                className="btn btn-secondary"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Live Demo
-                            </a> */}
                         </div>
 
                     </div>

@@ -8,7 +8,7 @@ const ProjectMain = () => {
                 <h2 className="text-center mb-4">My Projects</h2>
 
                 <div className="row">
-
+                    {/* Profile Management System Project */}
                     <div className="col-md-4 col-sm-6 col-12" style={{ marginTop: "10px" }}>
                         <div className="card shadow-lg mb-4 h-100">
                             <img
@@ -27,12 +27,13 @@ const ProjectMain = () => {
                                 </div>
                                 <div className="mt-auto d-flex justify-content-between">
                                     <Link to="/profile-management-project-details" className="btn btn-primary mt-3">View Details</Link>
-                                    <Link to="https://crud-profile-manager.netlify.app/" className="btn btn-secondary mt-3">Live Demo</Link>
+                                    <Link to="https://profile-management-system.netlify.app/" className="btn btn-secondary mt-3">Live Demo</Link>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    {/* AgroMart App System Project */}
                     <div className="col-md-4 col-sm-6 col-12" style={{ marginTop: "10px" }}>
                         <div className="card shadow-lg mb-4 h-100">
                             <img
@@ -57,6 +58,7 @@ const ProjectMain = () => {
                         </div>
                     </div>
 
+                    {/* Food Ordering System Project */}
                     <div className="col-md-4 col-sm-6 col-12" style={{ marginTop: "10px" }}>
                         <div className="card shadow-lg mb-4 h-100">
                             <img

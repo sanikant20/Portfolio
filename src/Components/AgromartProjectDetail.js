@@ -50,21 +50,13 @@ const AgromartProjectDetail = () => {
                         </p>
                         <div className="mt-4 button-group">
                             <a
-                                href="https://github.com/sanikant20/Agromart/tree/main/Development"
+                                href="https://github.com/sanikant20/Agromart/tree/main/Code"
                                 className="btn btn-primary mr-2"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 View Code
                             </a>
-                            {/* <a
-                                href="https://live-demo-link.com"
-                                className="btn btn-secondary"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Live Demo
-                            </a> */}
                         </div>
                     </div>
                 </div>

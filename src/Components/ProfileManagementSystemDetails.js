@@ -55,8 +55,6 @@ const FoodOrderingSystem = () => {
                                 Live Demo
                             </a>
                         </div>
-
-
                     </div>
                 </div>
                 <div className="mt-4 text-center">

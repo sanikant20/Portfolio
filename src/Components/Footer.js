@@ -6,11 +6,6 @@ const Footer = () => {
             {/* Footer Section */}
             <footer className="bg-dark text-white text-center py-4">
                 <div className="container">
-
-                    {/* <p><a href="https://github.com/sanikant20" className="text-white">My GitHub Profile</a></p>
-                    <p><a href="https://www.linkedin.com/in/sanikant-kushwaha-25617b284" className="text-white">My LinkedIn Profile</a></p>
-                    <p><a href="mailto:kushsani508@gmail.com" className="text-white">kushsani508@gmail.com</a></p> */}
-
                     <p>
                         <a
                             href="https://github.com/sanikant20"
