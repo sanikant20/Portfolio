@@ -9,7 +9,7 @@ const AgromartProjectDetail = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <img
-                            src="agromart.png"
+                            src="images/agromart.png"
                             alt="Project Screenshot"
                             className="img-fluid rounded mb-4"
                             style={{ objectFit: 'contain' }}
@@ -49,14 +49,10 @@ const AgromartProjectDetail = () => {
                             </ul>
                         </p>
                         <div className="mt-4 button-group">
-                            <a
-                                href="https://github.com/sanikant20/Agromart/tree/main/Code"
-                                className="btn btn-primary mr-2"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
+                            <Link to="https://github.com/sanikant20/Agromart/tree/main/Code" className="btn btn-primary">
                                 View Code
-                            </a>
+                            </Link>
+
                         </div>
                     </div>
                 </div>

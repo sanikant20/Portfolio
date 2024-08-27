@@ -1,16 +1,16 @@
 import React from 'react'
 import NavBar from '../Components/NavBar'
-import AgromartProjectDetail from '../Components/Projects/AgromartProjectDetail'
 import Footer from '../Components/Footer'
+import TaskTrackerApp from '../Components/Projects/TaskTrackerAppDetails'
 
-const ProjectScreen = () => {
+const tasktrackerappScreen = () => {
   return (
     <div>
       <NavBar />
-      <AgromartProjectDetail />
+      <TaskTrackerApp />
       <Footer />
     </div>
   )
 }
 
-export default ProjectScreen
+export default tasktrackerappScreen

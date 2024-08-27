@@ -9,7 +9,7 @@ const FoodOrderingSystem = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <img
-                            src="profilemanagementsystem.png"
+                            src="images/profilemanagementsystem.png"
                             alt="Project Screenshot"
                             className="img-fluid rounded mb-4"
                             style={{ objectFit: 'contain' }}
@@ -38,22 +38,12 @@ const FoodOrderingSystem = () => {
                             </ul>
                         </p>
                         <div className="mt-4 button-group">
-                            <a
-                                href="https://github.com/sanikant20/crudprofilemanager"
-                                className="btn btn-primary"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
+                            <Link to="https://github.com/sanikant20/ProfileManagementSystem" className="btn btn-primary">
                                 View Code
-                            </a>
-                            <a
-                                href="https://crud-profile-manager.netlify.app/"
-                                className="btn btn-secondary"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
+                            </Link>
+                            <Link to="https://profile-management-system.netlify.app/" className="btn btn-secondary">
                                 Live Demo
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

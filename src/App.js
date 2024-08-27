@@ -6,6 +6,7 @@ import ProjectScreen from './Screens/ProjectScreen';
 import AgromartProject from './Screens/AgromartDetailScreen';
 import FoodOrderingSystem from './Screens/FoodOrderingSystemScreen';
 import ProfileManagementSystem from './Screens/ProfileManagementSystemScreen';
+import TaskTrackerAppScreen from './Screens/TaskTrackerAppScreen';
 import About from './Screens/AboutScreen';
 import Contact from './Screens/ContactScreen';
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/agromart-project-details' element={< AgromartProject />} />
         <Route path='/food-ordering-project-details' element={< FoodOrderingSystem />} />
         <Route path='/profile-management-project-details' element={< ProfileManagementSystem />} />
+        <Route path='/task-tracker-app-details' element={< TaskTrackerAppScreen />} />
         <Route path='/about' element={< About />} />
         <Route path='/contact' element={< Contact />} />
       </Routes>

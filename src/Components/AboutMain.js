@@ -25,7 +25,7 @@ const AboutMain = () => {
                     <div className="col-md-6 text-center">
                         <div className="about-image">
                             <img
-                                src="sani.jpg"
+                                src="images/sani.jpg"
                                 alt="Sanikant"
                                 className="img-fluid rounded-circle mx-auto d-block"
                             />

@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../Components/NavBar'
-import ProfileManagementSystem from '../Components/ProfileManagementSystemDetails'
+import ProfileManagementSystem from '../Components/Projects/ProfileManagementSystemDetails'
 import Footer from '../Components/Footer'
 
 const ProjectScreen = () => {

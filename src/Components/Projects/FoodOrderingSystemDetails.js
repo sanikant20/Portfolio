@@ -9,7 +9,7 @@ const FoodOrderingSystem = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <img
-                            src="foodorderingsystem.png"
+                            src="images/foodorderingsystem.png"
                             alt="Project Screenshot"
                             className="img-fluid rounded mb-4"
                             style={{ objectFit: 'cover' }}
@@ -37,16 +37,11 @@ const FoodOrderingSystem = () => {
                         </p>
 
                         <div className="mt-4 button-group">
-                            <a
-                                href="https://github.com/sanikant20/FoodDeliveryApp"
-                                className="btn btn-primary mr-2"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
+                            <Link to="https://github.com/sanikant20/FoodDeliveryApp" className="btn btn-primary">
                                 View Code
-                            </a>
-                        </div>
+                            </Link>
 
+                        </div>
                     </div>
                 </div>
                 <div className="mt-4 text-center">
