@@ -18,7 +18,7 @@ const ProjectMain = () => {
                                 style={{ height: '200px', objectFit: 'contain' }}
                             />
                             <div className="card-body d-flex flex-column">
-                                <h5 className="card-title">AgroMart App / Full Stack Web & Mobile App</h5>
+                                <h5 className="card-title">AgroMart / Full Stack Web & Mobile App</h5>
                                 <div className="card-text-wrapper">
                                     <p className="card-text">
                                         AgroMart is an online platform for selling
