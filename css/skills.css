@@ -1,0 +1,75 @@
+/* ===========================
+   SKILLS SECTION
+   =========================== */
+
+#skills {
+  background: var(--bg);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-cat {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-cat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--cat-color, var(--accent));
+  border-radius: 16px 16px 0 0;
+}
+
+.skill-cat:hover {
+  border-color: var(--cat-color, var(--accent));
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+}
+
+.skill-cat-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--cat-color, var(--accent));
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: var(--skill-tag-bg);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.75rem;
+  padding: 5px 12px;
+  border-radius: 6px;
+  transition: all 0.15s;
+}
+
+.skill-tag:hover {
+  background: var(--skill-tag-bg-hover);
+  color: var(--text);
+}

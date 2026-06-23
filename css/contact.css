@@ -1,0 +1,103 @@
+/* ===========================
+   CONTACT SECTION
+   =========================== */
+
+#contact {
+  background: var(--surface);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-glow {
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(124, 109, 250, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.contact-content {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-email {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  text-decoration: none;
+  display: inline-block;
+  margin: 2rem 0;
+  transition: color 0.2s;
+}
+
+.contact-email:hover {
+  color: var(--accent);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: all 0.2s;
+  letter-spacing: 0.04em;
+}
+
+.social-link:hover {
+  color: var(--accent);
+  border-color: rgba(0, 229, 160, 0.3);
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+  padding: 2rem 4rem;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+footer span {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 1.5rem;
+  }
+}

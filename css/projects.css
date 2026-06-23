@@ -1,0 +1,118 @@
+/* ===========================
+   PROJECTS SECTION
+   =========================== */
+
+#projects {
+  background: var(--surface);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  border-color: var(--border2);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.project-num {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
+
+.project-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.project-desc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.stack-pill {
+  background: rgba(0, 229, 160, 0.07);
+  border: 1px solid rgba(0, 229, 160, 0.15);
+  color: var(--accent);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.7rem;
+  padding: 3px 10px;
+  border-radius: 100px;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.project-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+}
+
+.project-link:hover {
+  color: var(--accent);
+}
+
+/* Featured project spans full width */
+.project-featured {
+  grid-column: 1 / -1;
+  background: var(--surface2);
+  border-color: rgba(0, 229, 160, 0.15);
+}
+
+.project-featured .project-title {
+  font-size: 1.5rem;
+}
+
+.badge-featured {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 229, 160, 0.1);
+  border: 1px solid rgba(0, 229, 160, 0.2);
+  color: var(--accent);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.65rem;
+  padding: 3px 10px;
+  border-radius: 100px;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+}

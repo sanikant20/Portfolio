@@ -1,0 +1,80 @@
+/* ===========================
+   EXPERIENCE SECTION
+   =========================== */
+
+#experience {
+  background: var(--bg);
+}
+
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.exp-item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 3rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: all 0.2s;
+}
+
+.exp-item:hover {
+  padding-left: 1rem;
+}
+
+.exp-period {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.75rem;
+  color: var(--muted);
+  padding-top: 4px;
+  letter-spacing: 0.04em;
+}
+
+.exp-company {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.exp-role {
+  font-size: 0.875rem;
+  color: var(--accent);
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 1rem;
+}
+
+.exp-bullets {
+  list-style: none;
+  margin-top: 0.75rem;
+}
+
+.exp-bullets li {
+  color: var(--muted);
+  font-size: 0.875rem;
+  padding-left: 1.25rem;
+  position: relative;
+  margin-bottom: 0.4rem;
+  line-height: 1.6;
+}
+
+.exp-bullets li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.75rem;
+  top: 2px;
+}
+
+@media (max-width: 768px) {
+  .exp-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
