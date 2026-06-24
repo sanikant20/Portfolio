@@ -44,7 +44,7 @@
   background: rgba(0, 229, 160, 0.08);
   border: 1px solid rgba(0, 229, 160, 0.2);
   color: var(--accent);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'DM Mono', monospace;
   font-size: 0.75rem;
   padding: 6px 14px;
   border-radius: 100px;
@@ -58,7 +58,7 @@
 }
 
 h1.hero-name {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Syne', sans-serif;
   font-size: clamp(3.5rem, 8vw, 7rem);
   font-weight: 800;
   line-height: 1.05;
@@ -70,11 +70,11 @@ h1.hero-name {
 h1.hero-name .line2 {
   display: block;
   color: transparent;
-  -webkit-text-stroke: 1px var(--text-stroke);
+  -webkit-text-stroke: 1px var(--text-stroke, rgba(255, 255, 255, 0.25));
 }
 
 .hero-role {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'DM Mono', monospace;
   font-size: 1rem;
   color: var(--muted);
   margin-bottom: 2rem;

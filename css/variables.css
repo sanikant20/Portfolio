@@ -14,6 +14,7 @@
   --accent2: #7c6dfa;
   --accent3: #ff6b6b;
   --glow: rgba(0, 229, 160, 0.15);
+  --text-stroke: rgba(255, 255, 255, 0.25);
   --nav-bg: rgba(10, 10, 15, 0.85);
   --btn-primary-text: #0a0a0f;
   --hero-grid-line: rgba(255, 255, 255, 0.025);
@@ -34,6 +35,7 @@
   --accent2: #5b4cd6;
   --accent3: #c93a3a;
   --glow: rgba(0, 138, 94, 0.12);
+  --text-stroke: rgba(0, 0, 0, 0.2);
   --nav-bg: rgba(255, 255, 255, 0.85);
   --btn-primary-text: #ffffff;
   --hero-grid-line: rgba(0, 0, 0, 0.04);
