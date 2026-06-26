@@ -8,7 +8,7 @@
   align-items: center;
   padding: 8rem 4rem 4rem;
   position: relative;
-  overflow: hidden;
+  overflow-x: clip;
 }
 
 .hero-grid-bg {
@@ -101,6 +101,86 @@ h1.hero-name .line2 {
 
 @media (max-width: 768px) {
   #hero {
-    padding: 8rem 1.5rem 4rem;
+    padding: 6rem 1.5rem 4rem;
+    overflow-x: hidden;
+  }
+
+  .hero-glow {
+    display: none;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  h1.hero-name {
+    font-size: clamp(2.5rem, 9vw, 4.5rem);
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .hero-role {
+    font-size: 0.85rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero {
+    padding: 5rem 1rem 3rem;
+    min-height: 90vh;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-tag {
+    font-size: 0.6rem;
+    padding: 4px 10px;
+    margin-bottom: 1.25rem;
+  }
+
+  h1.hero-name {
+    font-size: clamp(1.8rem, 11vw, 2.8rem);
+    margin-bottom: 1rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .hero-role {
+    font-size: 0.75rem;
+    margin-bottom: 1.25rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .hero-desc {
+    font-size: 0.875rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-ctas .btn-primary,
+  .hero-ctas .btn-outline {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 0.8rem;
+    box-sizing: border-box;
   }
 }

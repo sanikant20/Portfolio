@@ -18,16 +18,15 @@ nav {
 }
 
 .nav-logo {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 800;
-  font-size: 1.1rem;
-  letter-spacing: -0.02em;
-  color: var(--text);
+  display: flex;
+  align-items: center;
   text-decoration: none;
 }
 
-.nav-logo span {
-  color: var(--accent);
+.nav-logo-img {
+  height: 30px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
