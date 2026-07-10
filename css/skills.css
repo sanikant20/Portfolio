@@ -40,7 +40,7 @@
 }
 
 .skill-cat-title {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Syne', sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -62,7 +62,7 @@
   background: var(--skill-tag-bg);
   border: 1px solid var(--border);
   color: var(--muted);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'DM Mono', monospace;
   font-size: 0.75rem;
   padding: 5px 12px;
   border-radius: 6px;

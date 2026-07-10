@@ -1,19 +1,27 @@
-<nav>
-  <a class="nav-logo" href="#hero">
+<nav role="navigation" aria-label="Main navigation">
+  <a class="nav-logo" href="#hero" aria-label="Home">
     <img src="favicon.svg" alt="SK" class="nav-logo-img" />
   </a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <button class="theme-toggle" aria-label="Toggle theme">☾</button>
-  <a
-    href="#contact"
-    class="btn-primary"
-    style="padding: 10px 20px; font-size: 0.8rem"
-    >Hire Me</a
-  >
+  <div class="nav-actions">
+    <button class="theme-toggle" aria-label="Toggle dark/light theme">☾</button>
+    <a
+      href="#contact"
+      class="btn-primary"
+      style="padding: 10px 20px; font-size: 0.8rem"
+      >Hire Me</a
+    >
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
 </nav>
+<ul class="nav-links" role="menubar">
+  <li role="none"><a href="#about" role="menuitem">About</a></li>
+  <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+  <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+  <li role="none"><a href="#experience" role="menuitem">Experience</a></li>
+  <li role="none"><a href="#education" role="menuitem">Education</a></li>
+  <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+</ul>

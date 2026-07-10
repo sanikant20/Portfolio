@@ -27,7 +27,7 @@
 }
 
 .contact-email {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Syne', sans-serif;
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 800;
   letter-spacing: -0.03em;
@@ -56,7 +56,7 @@
   gap: 8px;
   color: var(--muted);
   text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Syne', sans-serif;
   font-size: 0.8rem;
   padding: 10px 20px;
   border: 1px solid var(--border);
@@ -84,7 +84,7 @@ footer {
 }
 
 footer p {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'DM Mono', monospace;
   font-size: 0.75rem;
   color: var(--muted);
 }

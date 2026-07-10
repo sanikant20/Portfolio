@@ -81,6 +81,17 @@ h1.hero-name .line2 {
   letter-spacing: 0.02em;
 }
 
+.typewriter::after {
+  content: '|';
+  animation: blink 0.8s step-end infinite;
+  color: var(--accent);
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
 .hero-role .accent {
   color: var(--accent);
 }
