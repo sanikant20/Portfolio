@@ -153,10 +153,11 @@ function init() {
 
     navAnchors.forEach((a) => {
       const href = a.getAttribute('href').replace('#', '');
-      a.style.color = href === current ? '' : '';
       a.style.fontWeight = href === current ? '700' : '';
       if (href === current) {
         a.style.color = 'var(--accent)';
+      } else {
+        a.style.color = '';
       }
     });
   }
@@ -211,23 +212,23 @@ function init() {
 
     function type() {
       const current = words[wordIndex];
-      if (isDeleting) {
-        el.textContent = current.substring(0, charIndex--);
+      el.textContent = current.substring(0, charIndex);
+
+      if (!isDeleting) {
+        if (charIndex === current.length) {
+          isDeleting = true;
+          setTimeout(type, 2000);
+          return;
+        }
+        charIndex++;
       } else {
-        el.textContent = current.substring(0, charIndex++);
-      }
-
-      if (!isDeleting && charIndex === current.length + 1) {
-        isDeleting = true;
-        setTimeout(type, 2000);
-        return;
-      }
-
-      if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        wordIndex = (wordIndex + 1) % words.length;
-        setTimeout(type, 500);
-        return;
+        if (charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          setTimeout(type, 500);
+          return;
+        }
+        charIndex--;
       }
 
       setTimeout(type, isDeleting ? 40 : 80);

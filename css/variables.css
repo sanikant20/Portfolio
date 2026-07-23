@@ -20,7 +20,6 @@
   --hero-grid-line: rgba(255, 255, 255, 0.025);
   --skill-tag-bg: rgba(255, 255, 255, 0.04);
   --skill-tag-bg-hover: rgba(255, 255, 255, 0.08);
-  --text-stroke: rgba(255, 255, 255, 0.25);
 }
 
 [data-theme="light"] {
@@ -41,7 +40,6 @@
   --hero-grid-line: rgba(0, 0, 0, 0.04);
   --skill-tag-bg: rgba(0, 0, 0, 0.04);
   --skill-tag-bg-hover: rgba(0, 0, 0, 0.08);
-  --text-stroke: rgba(0, 0, 0, 0.25);
 }
 
 [data-theme="light"] .btn-primary {
