@@ -73,3 +73,13 @@
   background: var(--skill-tag-bg-hover);
   color: var(--text);
 }
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-cat {
+    padding: 1.25rem;
+  }
+}

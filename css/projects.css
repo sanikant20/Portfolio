@@ -116,3 +116,31 @@
   margin-bottom: 0.5rem;
   width: fit-content;
 }
+
+.project-title {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 1.25rem;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .project-featured .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

@@ -13,6 +13,26 @@
     <meta name="theme-color" content="#0a0a0f" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#f4f4ef" media="(prefers-color-scheme: light)" />
 
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sanikant Kushwaha",
+      "url": "https://sanikant.dev/",
+      "jobTitle": "MERN Stack Developer",
+      "sameAs": [
+        "https://github.com/sanikant20",
+        "https://www.linkedin.com/in/sanikant-kushwaha-25617b284"
+      ],
+      "email": "kushsani508@gmail.com"
+    }
+    </script>
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sanikant.dev/" />
@@ -50,7 +70,14 @@
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <div id="app"></div>
+    <main id="main-content">
+      <div id="app">
+        <div class="loading-skeleton" aria-label="Loading content">
+          <div class="sk-nav"><div class="sk-shape sk-shape--logo"></div><div class="sk-shape sk-shape--links"></div></div>
+          <div class="sk-hero"><div class="sk-shape sk-shape--tag"></div><div class="sk-shape sk-shape--title"></div><div class="sk-shape sk-shape--text"></div><div class="sk-shape sk-shape--cta"></div></div>
+        </div>
+      </div>
+    </main>
 
     <button class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
 

@@ -230,6 +230,103 @@ section {
   box-shadow: 0 8px 32px rgba(0, 229, 160, 0.4);
 }
 
+/* Loading skeleton */
+.loading-skeleton {
+  animation: sk-fade-in 0.3s ease;
+}
+
+.sk-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 4rem;
+}
+
+.sk-shape {
+  background: var(--surface2);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sk-shape::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent);
+  animation: sk-shimmer 1.5s infinite;
+}
+
+.sk-shape--logo { width: 30px; height: 30px; }
+.sk-shape--links { width: 300px; height: 30px; }
+
+.sk-hero {
+  padding: 8rem 4rem 4rem;
+  max-width: 900px;
+}
+
+.sk-shape--tag { width: 160px; height: 28px; margin-bottom: 2rem; }
+.sk-shape--title { width: 500px; height: 80px; margin-bottom: 1.5rem; }
+.sk-shape--text { width: 400px; height: 60px; margin-bottom: 3rem; }
+.sk-shape--cta { width: 200px; height: 50px; }
+
+@keyframes sk-shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes sk-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Page load animation */
+#app {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+#app.loaded {
+  opacity: 1;
+}
+
+/* Load error state */
+.load-error {
+  padding: 4rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+.load-error p {
+  margin-bottom: 0.5rem;
+}
+
+.load-error p:last-child {
+  font-size: 0.8rem;
+}
+
+/* Focus-visible for keyboard nav */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Form success message */
+.form-success {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.1rem;
+  color: var(--accent);
+  padding: 2rem 0;
+}
+
 /* prefers-reduced-motion */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -255,6 +352,10 @@ section {
     padding: 5rem 1.5rem;
   }
 
+  .section-sub {
+    margin-bottom: 2.5rem;
+  }
+
   .back-to-top {
     bottom: 1.25rem;
     right: 1.25rem;
@@ -262,4 +363,25 @@ section {
     height: 40px;
     font-size: 1rem;
   }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 4rem 1rem;
+  }
+
+  .section-sub {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .sk-nav {
+    padding: 1rem 1.5rem;
+  }
+
+  .sk-shape--links { width: 140px; }
+  .sk-shape--title { width: 240px; height: 60px; }
+  .sk-shape--text { width: 200px; height: 40px; }
+  .sk-shape--cta { width: 140px; }
+  .sk-hero { padding: 6rem 1.5rem 3rem; }
 }
